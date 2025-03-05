@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alana Dees - My Hobbies</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #2d0a42;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #4a148c;
+            position: relative;
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: #4a148c;
+        }
+        
+        .image-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+        
+        .description {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f3e5f5;
+            border-radius: 8px;
+        }
+        
+        .description p {
+            margin-bottom: 15px;
+        }
+        
+        .hobbies-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .hobby-item {
+            background-color: #4a148c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .hobby-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            background-color: #311b92;
+        }
+        
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            color: #4a148c;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: #311b92;
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Hobbies & Interests</h1>
+        
+        <div class="image-container">
+            <!-- Your hobbies image -->
+            <img src="image.jpeg" alt="Alana's Hobbies and Interests">
+        </div>
+        
+        <div class="description">
+            <p>When I'm not managing finances or analyzing data, I enjoy spending my time on various hobbies and interests that help me maintain a balanced lifestyle. I'm passionate about reading to expand my knowledge, cooking and baking to express creativity, and gaming to unwind after a busy day.</p>
+            <p>Graphic design has become an exciting creative outlet for me, allowing me to explore visual communication and aesthetics. And of course, I thoroughly enjoy eating the delicious results of my cooking and baking experiments – who doesn't love good food?</p>
+        </div>
+        
+        <div class="hobbies-list">
+            <span class="hobby-item">Reading</span>
+            <span class="hobby-item">Cooking</span>
+            <span class="hobby-item">Baking</span>
+            <span class="hobby-item">Gaming</span>
+            <span class="hobby-item">Graphic Design</span>
+            <span class="hobby-item" style="background-color: #e74c3c;">Eating 😋</span>
+        </div>
+        
+        <a href="index.html" class="back-link">← Back to Main Page</a>
+    </div>
+</body>
+</html>
